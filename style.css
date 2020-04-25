@@ -139,6 +139,10 @@ blockquote{
     padding: 2px 8px;
 }
 
+.single-post img{
+    max-width: 100%;
+}
+
 .post-summary .post{
     margin-bottom: 50px;
 }
