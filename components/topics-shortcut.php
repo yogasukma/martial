@@ -1,7 +1,10 @@
 <div class="topics-shortcut">
 
     <?php 
-        $categories = get_categories(); 
+        $categories = get_categories([
+            "orderby" => "name",
+            "order" => "desc"
+        ]); 
 
         foreach($categories as $category):
             $permalink = get_category_link( $category );
