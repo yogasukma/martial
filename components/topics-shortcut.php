@@ -13,7 +13,7 @@
                 <div class="topics-item">
                     <h3><a href="<?php echo $permalink ?>"><?php echo $category->name ?></a></h3>
                     <!-- <p><?php echo $category->description ?></p> -->
-                    <p><a href="<?php echo $permalink ?>"><?php echo $category->description ?></a></p>
+                    <p><a href="<?php echo $permalink ?>"><?php echo $category->description ?> &rarr;</a></p>
                 </div>
 
             <?php
