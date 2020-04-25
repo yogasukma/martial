@@ -15,6 +15,9 @@
             </article>
 
             <aside>
+
+                <?php get_template_part("components/author") ?>
+
                 <h3>Topik</h3>
                 <?php get_template_part( "components/topics", "shortcut" ) ?>
             </aside>

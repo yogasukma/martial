@@ -102,13 +102,13 @@ blockquote{
 
 .single-post article{
     /* flex-grow: 2; */
-    width: 75%;
+    width: 60%;
     padding: 0 50px;
 }
 
 .single-post aside{
     /* flex-grow: 1; */
-    width: 25%;
+    width: 40%;
 }
 
 .single-post header, .archive > header{
@@ -285,4 +285,31 @@ aside .topics-shortcut h3:before{
 
 .grunion-field-wrap {
     margin-bottom: 30px;
+}
+
+.author{
+    background: #f1c40f;
+    color: #fff;
+    padding: 1px 30px;
+    border-radius: 4px;
+}
+
+.author a{
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    padding: 7px 10px;
+    border-radius: 4px;
+    margin-top: 10px;
+    font-size: 1rem;
+}
+
+.author a:first-child{
+    border: 1px solid #fff;;
+    color: #fff;
+}
+
+.author a:last-child{
+    background-color: #5469D4;;
+    color: #fff;
 }
