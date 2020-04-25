@@ -248,3 +248,41 @@ aside .topics-shortcut h3:before{
     padding: 7px 10px;
     border-radius: 4px;
 }
+
+#contact-form-385{
+    background: #fff;
+    padding: 50px;
+    border-top: 5px solid #5469D4;
+}
+
+#contact-form-385 input[type='text'],
+#contact-form-385 input[type='select'],
+#contact-form-385 textarea,
+#contact-form-385 input[type='email']{
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    height: 40px;
+    background: #fff;
+}
+
+#contact-form-385 textarea{
+    height: 200px;
+}
+
+#contact-form-385 button{
+    text-decoration: none;
+    background-color: #5469D4;
+    color: #fff;
+    padding: 20px;
+    border-radius: 4px;
+    margin-left: 10px;
+    border: none;
+    width: 100%;
+    font-size: 0.9rem;
+}
+
+.grunion-field-wrap {
+    margin-bottom: 30px;
+}
