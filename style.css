@@ -256,7 +256,7 @@ aside .topics-shortcut h3:before{
 }
 
 #contact-form-385 input[type='text'],
-#contact-form-385 input[type='select'],
+#contact-form-385 select,
 #contact-form-385 textarea,
 #contact-form-385 input[type='email']{
     padding: 10px;
