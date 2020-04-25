@@ -1,0 +1,249 @@
+/*
+Theme Name: Martial
+Theme URI: https://github.com/yogasukma/martial-wp/
+Author: Yoga Sukma
+Author URI: https://yogasukma.web.id/
+Description: Theme for personal blogging site.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: martial
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Muli:wght@200;400;700;900&display=swap');
+
+body {
+    background-color: #f5f6fa;
+    font-family: 'Muli', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+p, ol li, ul li {
+    line-height: 2.3rem;
+    font-size: 1.2rem;
+    margin-bottom: 3rem;
+}
+
+blockquote{
+    margin-left: 0;
+    padding: 5px 10px 5px 20px;
+    border-left: 5px solid #5469D4;
+    background-color: #fff;
+    font-style: italic;
+}
+
+.say-hi {
+    width: 80%;
+    padding: 50px 0;
+    font-size: 1.2rem;
+    background-color: #f5f6fa;
+}
+
+@media(min-width: 1024px) {
+    .say-hi{
+        padding: 100px 0;
+    }
+}
+
+.say-hi p {
+    line-height: 2.3rem;
+    width: 50%;
+    margin: 30px auto;
+}
+
+.say-hi a {
+    text-decoration: none;
+    color: #5469D4;;
+}
+
+.say-hi a:hover {
+    text-decoration: underline;
+}
+
+.say-hi a:last-child {
+    text-decoration: none;
+    background-color: #5469D4;;
+    color: #fff;
+    padding: 7px 10px;
+    border-radius: 4px;
+    margin-left: 10px;
+}
+
+.say-hi a:last-child:hover {
+    background-color: #4E62C4;
+}
+
+.page .wrapper,
+.archive .wrapper{
+    margin: auto;
+    width: 80%;
+    padding: 100px 50px;
+}
+
+@media(min-width: 1024px) {
+    .page .wrapper,
+    .archive .wrapper{
+        margin: auto;
+        width: 50%;
+        padding: 100px 50px;
+    }
+}
+
+.single-post .wrapper{
+    width: 80%;
+    margin: auto;
+    padding: 10px 0;
+}
+
+.single-post .content{
+    display: flex;
+}
+
+.single-post article{
+    /* flex-grow: 2; */
+    width: 75%;
+    padding: 0 50px;
+}
+
+.single-post aside{
+    /* flex-grow: 1; */
+    width: 25%;
+}
+
+.single-post header, .archive > header{
+    padding: 100px 13%;
+    /* background-color: #fff; */
+    background-color: #5469D4;;
+    color: #fff;
+}
+
+.archive > header{
+    padding: 50px 13%;
+    text-align: center;
+}
+
+.single-post header h1, .archive > header h1{
+    font-size: 3rem;
+    padding: 10px 0;
+    margin: 0
+}
+
+.single-post header span a{
+    text-decoration: none;
+    border-left: 5px solid #16a085;
+    background-color: #1abc9c;
+    color: #fff;
+    /* border-radius: 4px; */
+    font-size: 0.8rem;
+    padding: 2px 8px;
+}
+
+.post-summary .post{
+    margin-bottom: 50px;
+}
+
+.post-summary .post header span a{
+    text-decoration: none;
+    border-left: 5px solid #16a085;
+    background-color: #1abc9c;
+    color: #fff;
+    /* border-radius: 4px; */
+    font-size: 0.8rem;
+    padding: 2px 8px;
+}
+
+.post-summary .post header h3{
+    margin: 10px 0;
+}
+
+.post-summary .post header h3 a{
+    color: #000;
+    text-decoration: none;
+}
+
+.post-summary .post header h3 a:hover{
+    text-decoration: underline;
+}
+
+.post-summary .post .content .read-more{
+    text-decoration: none;
+}
+
+footer{
+    /* background-color: #fff; */
+    background-color: #5469D4;;
+    padding: 50px 0;
+}
+
+.topics-shortcut {
+    width: 80%;
+    margin: auto;
+    display: flex;
+}
+
+.topics-item {
+    padding: 10px;
+    width: 20%;
+}
+
+.topics-shortcut h3, 
+.topics-shortcut p
+{
+    font-size: 1rem;
+    margin: 0 0 10px;
+    line-height: 1.5rem;
+}
+
+.topics-shortcut h3 a, 
+.topics-shortcut p a
+{
+    color: #fff;
+    text-decoration: none;
+}
+
+.topics-shortcut h3:before{
+    content: "#";
+    color: #fff;;
+}
+
+aside .topics-shortcut {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+aside .topics-item {
+    padding: 10px;
+    width: 100%;
+}
+
+aside .topics-shortcut h3 a{
+    border-left: 5px solid #16a085;
+    background-color: #1abc9c;
+    color: #fff;
+    font-size: 0.8rem;
+    padding: 2px 8px;
+}
+
+aside .topics-shortcut p a
+{
+    color: #000;
+    text-decoration: none;
+}
+
+aside .topics-shortcut h3:before{
+    content: "";
+}
+
+.posts-navigation h2{
+    display: none
+}
+
+.posts-navigation a{
+    text-decoration: none;
+    background-color: #5469D4;;
+    color: #fff;
+    padding: 7px 10px;
+    border-radius: 4px;
+}
