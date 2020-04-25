@@ -36,21 +36,24 @@ blockquote{
 .say-hi {
     width: 80%;
     padding: 50px 0;
+    margin: auto;
     font-size: 1.2rem;
     background-color: #f5f6fa;
 }
+
 
 @media(min-width: 1024px) {
     .say-hi{
         padding: 100px 0;
     }
+
+    .say-hi p {
+        line-height: 2.3rem;
+        width: 50%;
+        margin: 30px auto;
+    }
 }
 
-.say-hi p {
-    line-height: 2.3rem;
-    width: 50%;
-    margin: 30px auto;
-}
 
 .say-hi a {
     text-decoration: none;
@@ -74,11 +77,38 @@ blockquote{
     background-color: #4E62C4;
 }
 
+@media(max-width: 1024px) {
+    .say-hi a{
+        display: block;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .say-hi a:last-child {
+        margin: 0;
+    }
+}
+
 .page .wrapper,
 .archive .wrapper{
     margin: auto;
     width: 80%;
-    padding: 100px 50px;
+    padding: 100px 0;
+}
+
+
+
+.single-post header, .archive > header{
+    padding: 70px 20px;
+    /* background-color: #fff; */
+    background-color: #5469D4;;
+    color: #fff;
+}
+
+@media(max-width: 1024px) {
+    article p{
+        padding: 1px 20px;
+    }
 }
 
 @media(min-width: 1024px) {
@@ -88,34 +118,27 @@ blockquote{
         width: 50%;
         padding: 100px 50px;
     }
-}
 
-.single-post .wrapper{
-    width: 80%;
-    margin: auto;
-    padding: 10px 0;
-}
+    .single-post .wrapper{
+        width: 80%;
+        margin: auto;
+        padding: 10px 0;
+    }
 
-.single-post .content{
-    display: flex;
-}
+    .single-post .content{
+        display: flex;
+    }
 
-.single-post article{
-    /* flex-grow: 2; */
-    width: 60%;
-    padding: 0 50px;
-}
+    .single-post article{
+        /* flex-grow: 2; */
+        width: 60%;
+        padding: 0 50px;
+    }
 
-.single-post aside{
-    /* flex-grow: 1; */
-    width: 40%;
-}
-
-.single-post header, .archive > header{
-    padding: 100px 13%;
-    /* background-color: #fff; */
-    background-color: #5469D4;;
-    color: #fff;
+    .single-post aside{
+        /* flex-grow: 1; */
+        width: 40%;
+    }
 }
 
 .archive > header{
@@ -124,10 +147,24 @@ blockquote{
 }
 
 .single-post header h1, .archive > header h1{
-    font-size: 3rem;
+    font-size: 1.5rem;
     padding: 10px 0;
     margin: 0
 }
+
+@media(min-width: 1024px) {
+    .single-post header, .archive > header{
+        padding: 100px 13%;
+    }
+
+    .single-post header h1, .archive > header h1{
+        font-size: 3rem;
+        padding: 10px 0;
+        margin: 0
+    }
+}
+
+
 
 .single-post header span a{
     text-decoration: none;
@@ -141,6 +178,7 @@ blockquote{
 
 .single-post img{
     max-width: 100%;
+    height: auto;
 }
 
 .post-summary .post{
@@ -187,6 +225,12 @@ footer{
     justify-content: space-between;
 }
 
+@media(max-width: 1024px) {
+    .topics-shortcut{
+        flex-direction: column;
+    }
+}
+
 .topics-item {
     padding: 10px;
     width: 20%;
@@ -220,7 +264,14 @@ aside .topics-shortcut {
 
 aside .topics-item {
     padding: 10px;
-    width: 100%;
+    width: 80%;
+}
+
+@media(min-width: 1024px) {
+    aside .topics-item {
+        padding: 10px;
+        width: 100%;
+    }
 }
 
 aside .topics-shortcut h3 a{
