@@ -19,7 +19,7 @@
                 <?php get_template_part("components/author") ?>
 
                 <div class="topics">
-                    <h3>Topik Lainnya</h3>
+                    <strong>Topik Lainnya</strong>
                     <?php get_template_part( "components/topics", "shortcut" ) ?>
                 </div>
             </aside>

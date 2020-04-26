@@ -262,7 +262,8 @@ footer{
     border: 1px solid #eee;
 }
 
-.topics h3{
+.topics strong{
+    font-size: 1.2rem;
     text-align: center;
     border-bottom: 1px solid #eee;
     padding-bottom: 10px;
