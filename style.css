@@ -585,7 +585,7 @@ aside .topics-shortcut p a
         display: none;
     }
 
-    aside .topics{
+    .single-post .content aside .topics{
         display: block;
     }
 }
