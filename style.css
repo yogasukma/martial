@@ -64,7 +64,7 @@ blockquote{
     border-radius: 4px;
 }
 
-.say-hi a:jjld {
+.say-hi a:last-child {
     text-decoration: none;
     background-color: #5469D4;;
     color: #fff;
