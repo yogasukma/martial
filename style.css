@@ -331,7 +331,7 @@ aside .topics-shortcut h3:before{
 
 @media(max-width: 1024px){
     #jp-relatedposts h3.jp-relatedposts-headline{
-        font-size: 1.5rem;
+        font-size: 1.5rem !important;
     }
 
     #jp-relatedposts .jp-relatedposts-items .jp-relatedposts-post{
@@ -344,7 +344,7 @@ aside .topics-shortcut h3:before{
         line-height: 2rem;
         margin-bottom: 15px;
         display: block;
-        color: #000;
+        color: #5469D4;
         font-weight: bold !important;
     }
 }
