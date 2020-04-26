@@ -90,7 +90,8 @@ blockquote{
 
 .archive > header h1{
     font-size: 2rem;
-    margin: 0
+    margin: 0;
+    margin-bottom: 20px;
 }
 
 .archive > header h1:before{
@@ -102,6 +103,7 @@ blockquote{
     padding: 0;
     margin: 0;
     font-size: 1rem;
+    line-height: 2rem;
 }
 
 .page .wrapper{
@@ -156,6 +158,7 @@ blockquote{
 
 .post-summary .post header h3{
     margin: 20px 0;
+    line-height: 2.3rem;
 }
 
 .post-summary .post header h3 a{
@@ -191,7 +194,7 @@ footer{
 
 #contact-form-385{
     background: #fff;
-    padding: 50px;
+    padding: 20px;
     border-top: 5px solid #5469D4;
 }
 
@@ -231,7 +234,6 @@ footer{
     background: #f1c40f;
     color: #fff;
     padding: 1px 30px;
-    border-radius: 4px;
 }
 
 .author a{
@@ -242,9 +244,6 @@ footer{
     border-radius: 4px;
     margin-top: 10px;
     font-size: 1rem;
-}
-
-.author a:first-child{
     border: 1px solid #fff;;
     color: #fff;
 }
@@ -252,6 +251,7 @@ footer{
 .author a:last-child{
     background-color: #5469D4;;
     color: #fff;
+    border: none;
 }
 
 .topics{
@@ -263,7 +263,7 @@ footer{
 }
 
 .topics-shortcut {
-    width: 80%;
+    width: 90%;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -327,6 +327,26 @@ aside .topics-shortcut h3:before{
 .topics{
     width: 80%;
     margin: 20px auto;
+}
+
+@media(max-width: 1024px){
+    #jp-relatedposts h3.jp-relatedposts-headline{
+        font-size: 1.5rem;
+    }
+
+    #jp-relatedposts .jp-relatedposts-items .jp-relatedposts-post{
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    #jp-relatedposts .jp-relatedposts-items .jp-relatedposts-post .jp-relatedposts-post-title a{
+        font-size: 1.3rem;    
+        line-height: 2rem;
+        margin-bottom: 15px;
+        display: block;
+        color: #000;
+        font-weight: bold;
+    }
 }
 
 @media(min-width: 1024px) {
@@ -411,9 +431,12 @@ aside .topics-shortcut h3:before{
         width: 40%;
     }
 
+    #contact-form-385{
+        padding: 50px;
+    }
+
     .topics{
         box-sizing: border-box;
-        width: 100%;
     }
 
     .topics-shortcut{
@@ -427,5 +450,9 @@ aside .topics-shortcut h3:before{
     aside .topics-item {
         padding: 10px;
         width: 100%;
+    }
+
+    .author{
+        border-radius: 4px;
     }
 }
