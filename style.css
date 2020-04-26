@@ -464,4 +464,8 @@ aside .topics-shortcut h3:before{
     .author{
         border-radius: 4px;
     }
+    #jp-relatedposts .jp-relatedposts-items .jp-relatedposts-post .jp-relatedposts-post-title a{
+        color: #5469D4 !important;
+        font-weight: bold !important;
+    }
 }
