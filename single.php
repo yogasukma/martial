@@ -18,8 +18,10 @@
 
                 <?php get_template_part("components/author") ?>
 
-                <h3>Topik</h3>
-                <?php get_template_part( "components/topics", "shortcut" ) ?>
+                <div class="topics">
+                    <h3>Topik</h3>
+                    <?php get_template_part( "components/topics", "shortcut" ) ?>
+                </div>
             </aside>
         </div>
 
