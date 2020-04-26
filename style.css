@@ -335,17 +335,17 @@ aside .topics-shortcut h3:before{
     }
 
     #jp-relatedposts .jp-relatedposts-items .jp-relatedposts-post{
-        width: 100%;
-        margin-bottom: 50px;
+        width: 100% !important;
+        margin-bottom: 50px !important;
     }
 
     #jp-relatedposts .jp-relatedposts-items .jp-relatedposts-post .jp-relatedposts-post-title a{
-        font-size: 1.3rem;    
+        font-size: 1.3rem !important;    
         line-height: 2rem;
         margin-bottom: 15px;
         display: block;
         color: #000;
-        font-weight: bold;
+        font-weight: bold !important;
     }
 }
 
