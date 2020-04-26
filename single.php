@@ -15,15 +15,16 @@
             </article>
 
             <aside>
-
-                <?php get_template_part("components/author") ?>
-
-                <div class="topics">
-                    <strong>Topik Lainnya</strong>
-                    <?php get_template_part( "components/topics", "shortcut" ) ?>
-                </div>
+                <?php get_template_part( "components/sidebar") ?>
             </aside>
         </div>
+
+
+        <?php comments_template(); ?>
+
+        <aside class="mobile-addition">
+            <?php get_template_part( "components/sidebar") ?>
+        </aside>
 
 </div>
 

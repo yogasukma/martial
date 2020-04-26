@@ -64,7 +64,7 @@ blockquote{
     border-radius: 4px;
 }
 
-.say-hi a:last-child {
+.say-hi a:jjld {
     text-decoration: none;
     background-color: #5469D4;;
     color: #fff;
@@ -198,10 +198,10 @@ footer{
     border-top: 5px solid #5469D4;
 }
 
-#contact-form-385 input[type='text'],
-#contact-form-385 select,
-#contact-form-385 textarea,
-#contact-form-385 input[type='email']{
+input[type='text'],
+select,
+textarea,
+input[type='email']{
     padding: 10px;
     width: 100%;
     border: 1px solid #ccc;
@@ -210,11 +210,12 @@ footer{
     background: #fff;
 }
 
-#contact-form-385 textarea{
+textarea{
     height: 200px;
 }
 
-#contact-form-385 button{
+button,
+input[type='submit']{
     text-decoration: none;
     background-color: #5469D4;
     color: #fff;
@@ -234,6 +235,7 @@ footer{
     background: #f1c40f;
     color: #fff;
     padding: 1px 30px;
+    margin-bottom: 20px;
 }
 
 .author a{
@@ -302,6 +304,10 @@ footer{
     color: #fff;;
 }
 
+.single-post .content aside .topics{
+    display: none;
+}
+
 aside .topics-shortcut {
     width: 100%;
     display: flex;
@@ -327,7 +333,7 @@ aside .topics-shortcut p a
     text-decoration: none;
 }
 
-aside .topics-shortcut h3:before{
+.topics-shortcut h3:before{
     content: "";
 }
 
@@ -335,6 +341,95 @@ aside .topics-shortcut h3:before{
 .topics{
     width: 80%;
     margin: 20px auto;
+}
+
+.mobile-addition .author{
+    display: none;
+}
+
+#commentform{
+    background: #fff;
+    padding: 20px 50px;
+    border-top: 5px solid #5469D4;
+}
+
+#commentform label{
+    display: block;
+}
+
+#comments #reply-title{
+    display: none;
+}
+
+#comments .comment-list{
+    background: #fff;
+    border-top: 5px solid #5469D4;
+}
+
+#comments .comment-author.vcard{
+    display: flex;
+}
+
+#comments .comment-author.vcard img{
+    padding: 10px;
+    border-radius: 50%;
+}
+
+#comments .comment-author.vcard cite{
+    padding: 15px 5px;
+}
+
+#comments .comment-author.vcard cite a{
+    color: #000;
+    font-weight: bold;
+    text-decoration: none;
+    font-style: normal;
+}
+
+#comments .comment-author.vcard span{
+    padding: 15px 0px;
+    font-style: italic;
+}
+
+#comments .comment-meta.commentmetadata{
+    margin-top: 20px;
+}
+
+#comments .comment-meta.commentmetadata a{
+    text-decoration: none;
+    color: #ccc;
+    font-style: italic;
+    font-size: 1rem;
+}
+
+#comments .reply{
+    margin-bottom: 20px;
+    text-align: right;
+}
+
+#comments .reply a{
+    text-decoration: none;
+    background-color: #5469D4;;
+    color: #fff;
+    padding: 7px 10px;
+    border-radius: 4px;
+}
+
+#comments .depth-1{
+    padding: 20px 50px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+#comments .depth-1:last-child{
+    border: none
+}
+
+#comments .bypostauthor{
+    border-radius: 4px;
+    padding: 10px 20px;
+    border: 1px solid #eee;
+    background: #f9f9f9;
 }
 
 @media(max-width: 1024px){
@@ -464,8 +559,33 @@ aside .topics-shortcut h3:before{
     .author{
         border-radius: 4px;
     }
+
+    
+    #comments{
+        margin: 100px 0 50px;
+        display: flex;;
+    }
+
+    #comments > div{
+        width: 50%;
+        padding: 10px;
+    }
+
+    #respond{
+        position: relative;
+        top: -10px;
+    }
+
     #jp-relatedposts .jp-relatedposts-items .jp-relatedposts-post .jp-relatedposts-post-title a{
         color: #5469D4 !important;
         font-weight: bold !important;
+    }
+
+    .mobile-addition{
+        display: none;
+    }
+
+    aside .topics{
+        display: block;
     }
 }
