@@ -262,6 +262,12 @@ footer{
     border: 1px solid #eee;
 }
 
+.topics h3{
+    text-align: center;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
 .topics-shortcut {
     width: 90%;
     margin: auto;
@@ -436,6 +442,7 @@ aside .topics-shortcut h3:before{
     }
 
     .topics{
+        width: 100%;
         box-sizing: border-box;
     }
 
