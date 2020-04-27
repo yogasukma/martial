@@ -430,6 +430,10 @@ aside .topics-shortcut p a
     background: #f9f9f9;
 }
 
+.comment-form-url{
+    display: none;
+}
+
 @media(max-width: 1024px){
     #jp-relatedposts h3.jp-relatedposts-headline{
         font-size: 1.5rem !important;
