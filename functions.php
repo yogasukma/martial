@@ -14,6 +14,7 @@ add_filter( 'script_loader_src', 'martial_remove_cache_parameter', 15, 1 );
 add_filter( 'style_loader_src', 'martial_remove_cache_parameter', 15, 1 );
 add_filter( 'excerpt_more', 'martial_excerpt_link' );
 add_filter( 'get_the_archive_title', 'martial_custom_archive_title');
+add_filter('comment_form_default_fields', 'remove_website_url_on_comment');
 
 add_action( 'after_setup_theme', 'title_tag' );
 add_action( 'wp_enqueue_scripts', 'loading_css' );
@@ -67,4 +68,13 @@ function martial_custom_archive_title ($title) {
             $title = post_type_archive_title( '', false );
         }
     return $title;    
+}
+
+function remove_website_url_on_comment($fields)
+{
+    if(isset($fields['url'])) {
+        unset($fields['url']);
+    }
+
+    return $fields;
 }
