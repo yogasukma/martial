@@ -74,7 +74,7 @@ function remove_website_url_on_comment($fields)
 {
     if(isset($fields['url'])) {
         unset($fields['url']);
+        
+        return $fields;
     }
-
-    return $fields;
 }
