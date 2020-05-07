@@ -258,7 +258,6 @@ input[type='submit']{
     background: #fff;
     padding: 10px 20px;
     margin-top: 20px;
-    border-radius: 4px;
     border: 1px solid #eee;
 }
 
@@ -432,6 +431,20 @@ aside .topics-shortcut p a
 
 .comment-form-url{
     display: none;
+}
+
+.suggested-post {
+    background: #fff;
+    padding: 20px 40px;
+    border-top: 5px solid #5469D4;
+}
+
+.suggested-post li {
+    margin-bottom: 0;
+}
+
+.suggested-post li a{
+    text-decoration: none;
 }
 
 @media(max-width: 1024px){
