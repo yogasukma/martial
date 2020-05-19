@@ -330,7 +330,7 @@ aside .topics-shortcut p a
     text-decoration: none;
 }
 
-.topics-shortcut h3:before{
+aside .topics-shortcut h3:before{
     content: "";
 }
 
@@ -473,8 +473,8 @@ aside .topics-shortcut p a
     }
 
     .say-hi{
-        padding: 100px 0;
-        height: auto;
+        padding: 250px 0;
+        height: 100vh;
     }
 
     .say-hi p {
