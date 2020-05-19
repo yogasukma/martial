@@ -1,6 +1,6 @@
 <div class="post">
     <header>
-        <span><?php the_category(", ") ?></span>
+        <!-- <span><?php the_category(", ") ?></span> -->
         <h3><a href="<?php the_permalink() ?>"><?php the_title() ?></a></h3>
     </header>
 
